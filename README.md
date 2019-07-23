@@ -3,8 +3,8 @@
 
 ## 前提
 + 首先要有amazon账户
-+ 使用Application Integration  SQS服务，创建队列
-
++ [使用Application Integration  SQS服务，创建队列](https://console.aws.amazon.com/sqs/home?region=ap-northeast-1#create-queue:noRefresh=true;prefix=$)
++ [Amazon SQS Region](https://docs.aws.amazon.com/zh_cn/general/latest/gr/rande.html#sqs_region)
 
 在pom.xml文件中引入以下依赖
 ```
