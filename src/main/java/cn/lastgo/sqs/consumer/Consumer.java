@@ -20,8 +20,8 @@ public class Consumer {
     private final Logger LOGGER = LoggerFactory.getLogger(Consumer.class);
 
     @JmsListener(destination = "${queue.fifo}")
-    public void listenQueueFifo(@Payload final Message<MyMessage> message) {
-        LOGGER.info("Listening {} in queue fifo", message.getPayload());
+    public void listenQueueFifo(@Payload String message) {
+        LOGGER.info("Listening {} in queue fifo", message);
     }
 
 
