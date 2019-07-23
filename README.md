@@ -39,6 +39,19 @@
         </dependency>
 ```
 
+### 配置文件 application.properties
+```
+# request key
+cloud.aws.credentials.accessKey=请输入您的凭证KEY
+cloud.aws.credentials.secretKey=请输入您的凭证密钥
+cloud.aws.region.static=ap-northeast-1
+cloud.aws.endpoint.static=sqs.ap-northeast-1.amazonaws.com
+
+#队列名称  fifo队列必须以 .fifo结尾
+queue.stand=demo-queue
+queue.fifo=fifo-queue.fifo
+queue.test=test-queue
+```
 ### 编写Jms config
 ```
 
