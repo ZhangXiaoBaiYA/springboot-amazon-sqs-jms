@@ -6,6 +6,10 @@
 + [使用Application Integration  SQS服务，创建队列](https://console.aws.amazon.com/sqs/home?region=ap-northeast-1#create-queue:noRefresh=true;prefix=$)
 + [Amazon SQS Region](https://docs.aws.amazon.com/zh_cn/general/latest/gr/rande.html#sqs_region)
 
+
+## 使用spring cloud   
+    分支名称 spring+aws 更简单。。。
+
 在pom.xml文件中引入以下依赖
 ```
         <!--引入 SQS依赖 -->
