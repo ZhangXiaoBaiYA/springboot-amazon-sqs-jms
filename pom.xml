@@ -12,7 +12,7 @@
     <artifactId>sqs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sqs</name>
-    <description>Demo project for Spring Boot using SQS with JMS</description>
+    <description>Demo project for Spring Boot using SQS</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -21,37 +21,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.1.6.RELEASE</version>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <!--引入 SQS依赖 -->
         <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>amazon-sqs-java-messaging-lib</artifactId>
-            <version>1.0.4</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-aws</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jms</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk</artifactId>
-            <version>1.9.6</version>
-        </dependency>
-
-        <!--json 依赖-->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-aws-messaging</artifactId>
         </dependency>
         <!--log 依赖-->
         <dependency>

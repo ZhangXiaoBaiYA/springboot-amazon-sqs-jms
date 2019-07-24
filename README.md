@@ -1,6 +1,8 @@
 # springboot-amazon-sqs-jms
 使用springboot + amazon(SQS) + jms  消息队列的使用
 
+## 使用spring cloud   
+    分支名称 spring+aws
 ## 前提
 + 首先要有amazon账户
 + [使用Application Integration  SQS服务，创建队列](https://console.aws.amazon.com/sqs/home?region=ap-northeast-1#create-queue:noRefresh=true;prefix=$)
