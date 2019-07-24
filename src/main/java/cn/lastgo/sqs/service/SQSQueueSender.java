@@ -1,5 +1,6 @@
 package cn.lastgo.sqs.service;
 
+import cn.lastgo.sqs.vo.DemoMessage;
 import com.amazonaws.services.sqs.AmazonSQSAsync;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.aws.messaging.core.QueueMessagingTemplate;
@@ -17,5 +18,9 @@ public class SQSQueueSender {
 
     public void send(String message) {
         this.queueMessagingTemplate.send("demo-queue", MessageBuilder.withPayload(message).build());
+    }
+
+    public void send(DemoMessage message) {
+        this.queueMessagingTemplate.convertAndSend("demo-queue",message);
     }
 }
