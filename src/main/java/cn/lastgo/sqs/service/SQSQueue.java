@@ -8,11 +8,11 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SQSQueueSender {
+public class SQSQueue {
     private final QueueMessagingTemplate queueMessagingTemplate;
 
     @Autowired
-    public SQSQueueSender(AmazonSQSAsync amazonSqs) {
+    public SQSQueue(AmazonSQSAsync amazonSqs) {
         this.queueMessagingTemplate = new QueueMessagingTemplate(amazonSqs);
     }
 
@@ -23,4 +23,5 @@ public class SQSQueueSender {
     public void send(DemoMessage message) {
         this.queueMessagingTemplate.convertAndSend("demo-queue",message);
     }
+
 }
